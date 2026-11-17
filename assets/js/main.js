@@ -456,6 +456,63 @@
         ]
       },
 
+      tourism: {
+        title: 'Tourism Event & Tour Guide Registration Portal',
+        subtitle: 'Islands Souvenirs • Event Partner Registration & Admin Management',
+        category: 'Web Application / Tourism & Event Partner Management',
+        stack: ['PHP (OOP)', 'MySQL Database', 'JavaScript ES6', 'Bootstrap 5', 'Document & Image Upload', 'GCash & Banking API', 'Role-Based Admin'],
+        description: 'A specialized tourism event and tour guide onboarding platform engineered by Russell Evan Loquinario for Islands Souvenirs event operations. The system provides a responsive public partner registration portal with photo and government ID verification, flexible payout preferences (GCash, Bank Transfer, Cash), and a comprehensive multi-tier administrative dashboard for reviewing submissions, managing tourism events, and provisioning administrator accounts.',
+        credentials: 'Super Admin Demo: russellevanloquinario@gmail.com / superadmin123',
+        features: [
+          'Public Tour Guide Registration Form: Seamless onboarding for island events (Sinulog, Rizal Day, Tour Guide Registration in Panglao Bohol)',
+          'Identity & Verification Uploads: 2x2 face selfie photo capture plus Philippine Government ID upload (JPG, PNG, WebP, PDF) with live validation',
+          'Flexible Payout Method Configurator: Choice of GCash, Bank Transfer, or Cash with validated account holder and mobile/account number fields',
+          'Automated Account ID Generation: Auto-generates unique tracking IDs for each partner registration (e.g., TG-2026-00001, TG-2026-00002)',
+          'Administrative Control Center: Real-time submission counter metrics (Total Registrations: 5, Pending Review: 5, Approved: 0, Rejected: 0)',
+          'Event & Submissions Management: Instant event filter dropdown, quick search by name/email/ID, submission review (View, Edit, Delete), and event scheduling form',
+          'Multi-Tier Role Administration: Super Admin and Administrator level controls for provisioning admin accounts, managing permissions, and secure session logout'
+        ],
+        screenshots: [
+          {
+            src: 'assets/img/project-tourism-registration.jpg',
+            label: '📋 Public Tour Guide Registration',
+            caption: 'Public island event partner registration form with scenic hero banner, 2x2 selfie upload, government ID verification, event selection, and payout method selector (GCash / Bank Transfer / Cash).'
+          },
+          {
+            src: 'assets/img/project-tourism-admin.jpg',
+            label: '👑 Super Admin Submission Dashboard',
+            caption: 'Islands Souvenirs Super Admin dashboard featuring live status metric counters (Total: 5, Pending: 5), filtered submissions data table, Event Management (Sinulog, Rizal Day, Panglao Bohol), and Admin Account creation.'
+          },
+          {
+            src: 'assets/img/project-tourism-submissions.png',
+            label: '📊 Submissions Review & Event Creation',
+            caption: 'Administrator view of registered tour guide submissions, status badges (Pending, Approved, Rejected), and Add an Event scheduling controls.'
+          }
+        ]
+      },
+
+      islandconverter: {
+        title: 'Island Converter: Dollar Smart Target Price Formula & Multiplier Advisor',
+        subtitle: 'Real-Time USD to PHP Rates • Adaptive Multiplier Target Price Advisor',
+        category: 'Financial Algorithm & Currency Multiplier Advisor',
+        stack: ['JavaScript ES6', 'Smart Target Price Formula', 'Real-Time FX Feed API', 'Responsive UI/UX', 'Financial Computation', 'Offline LocalStorage'],
+        description: 'An intelligent currency conversion and financial pricing advisor platform engineered by Russell Evan Loquinario. Automatically tracks real-time daily, weekly (7-day average), and monthly (30-day average) US Dollar to Philippine Peso exchange rates. Features a proprietary Smart Target Price & Dollar Multiplier Advisor algorithm: users set their baseline Target Price (e.g., ₱159); at base ×3 with a ₱63.93 dollar rate, the total is ₱191.81 (Good!). When the daily, weekly, or monthly dollar rate drops (e.g., ₱49 × 3 = ₱147, which is lower than ₱159), it automatically advises and increments the multiplier to ×4, ×5, etc., safeguarding profitability and exceeding the target price.',
+        features: [
+          'Smart Target Price Formula & Multiplier Advisor: Adaptive algorithm that auto-advises higher multipliers (×3 → ×4, ×5) when FX rates drop to ensure totals stay above target price',
+          'Live Currency Converter: Real-time bilateral PHP ⮂ USD calculator with one-click currency swap and instantaneous calculation',
+          'Multi-Timeframe Rate Tracking: Auto-updating rate tracking cards for Today (₱63.9355), Previous Day (₱63.8130), 7-Day Weekly Avg (₱63.4059), and 30-Day Monthly Avg (₱63.4040)',
+          'Formula Breakdown & Live Comparison: Visual step-by-step math evaluation card with active status badges ("Good! Base ×3 covers your Target Price") and one-click multiplier picker (×3, ×4, ×5, ×6)',
+          'Offline & Mobile Ready: Automatically stores current FX reference rates locally for uninterrupted offline calculations on any mobile device'
+        ],
+        screenshots: [
+          {
+            src: 'assets/img/project-island-converter.jpg',
+            label: '📊 Island Converter & Smart Multiplier Advisor',
+            caption: 'Complete Island Converter platform showing Live Currency Converter (₱63.9355), Daily/Weekly/Monthly exchange rates, and the Smart Target Price & Dollar Multiplier Advisor algorithm.'
+          }
+        ]
+      },
+
       calculator: {
         title: 'Calculator Loquinario (Tactile Neumorphic Mobile & Web)',
         subtitle: 'Interactive Client-Side Engineering • Web Audio API Synthesis',
@@ -583,6 +640,8 @@
     init() {
       this.projects.usermanagement = this.projects.crudsystem;
       this.projects.reactiveui = this.projects.portfolioproject;
+      this.projects.islands = this.projects.tourism;
+      this.projects.converter = this.projects.islandconverter;
       this.bindFilter();
       this.bindProjectInspection();
     },
